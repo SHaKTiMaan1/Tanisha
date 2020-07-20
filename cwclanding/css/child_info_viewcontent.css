@@ -1,0 +1,82 @@
+#content-area{
+    
+    margin-left: 250px;
+    padding-top: 60px;
+    background: #fff;
+    height: 100vh;
+}
+.img img{
+    width: 500px;
+    float: right;
+}
+.main{
+    padding: 0px 20px 20px 20px;
+}
+.userimg{
+    width: 120px;
+    margin-left: 290px;
+    
+    margin-top: 0;
+    
+}
+.basic{    
+    color: #282639;
+    display: block;
+    }
+.heading{
+    padding-left: 310px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #282639;
+    margin-bottom: 0;
+}
+.sub-heading{
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color:#7d0bb3; 
+    padding-left: 330px;
+}
+.main .container{
+    padding-left: 150px;
+}
+.fields{
+    color: #7d0bb3;
+    font-size: 18px;
+}
+p{
+    padding-left: 20px;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.inner{
+    padding-left: 20px;
+}
+.center{
+    padding-left: 70px;
+}
+.btn{
+	display: block;
+	width: 100%;
+	height: 30px;
+	border-radius: 20px;
+	outline: none;
+	border: 2px solid #282639;
+    
+	background-size: 200%;
+	font-size: 0.9rem;
+	background: #282639;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn a{
+    color: #d3d3d3;
+}
+.btn a:hover{
+    color: #39ff14;
+}
