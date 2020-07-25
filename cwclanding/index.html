@@ -3,137 +3,403 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registering A New Child</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <link rel="stylesheet" href="css/child.css">
-    <link rel="stylesheet" href="css/_childcontent-area.css">
-    <script src="js/sweet-alert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/sweet-alert.css">
+    <title>Child Registration Portal</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rowdies&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/_childcontent-area.css">
 </head>
 <body>
-    
-    
-        <section id="sideMenu">
-        
-            <nav>
-                 <a class="active" href="home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-              
-                <a class="active current" href="index.html"><i class="current2 fa fa-id-badge" aria-hidden="true"></i>Child Registration</a>
-                <a class="active" href="indexccireg.html"><i class="fa fa-building" aria-hidden="true"></i>CCI Registration</a>
-                <a class="active" href="indexemployeereg.html"><i class="fa fa-id-badge" aria-hidden="true"></i>Employee Registration</a>
-                <a class="active" href="indexpool.html"><i class="fa fa-list-alt" aria-hidden="true"></i>Eligibility Pool</a>
-                <a class="active" href="indexccidetails.html"><i class="fa fa-info" aria-hidden="true"></i>   CCI Details</a>
-            </nav>
-        </section>
+    <section id="sideMenu">
+        <nav id="sidemenu-flexbox">
+  
+          <a
+            class="active "
+            href="home.html"
+            title="Home"
+            ><i class="fa fa-home" aria-hidden="true"></i
+          ></a>
+          <a
+          class="active current"
+          href="indexregister.html"
+          title="Registration Portal"
+          ><i class="current2 fa fa-user-plus" aria-hidden="true"></i>
+        </a>
+  
+          <a
+            class="active"
+            href="child_info.html"
+            title="Children Under Care"
+            ><i class="fa fa-child" aria-hidden="true"></i>
+          </a>
+  
+          <a
+            class="active"
+            href="indexccidetails.html"
+            title="Child Care Institutions under supervision"
+            ><i class="fa fa-building" aria-hidden="true"></i
+          ></a>
+  
+          <a
+            class="active"
+            href="indexccireg.html"
+            title="Help"
+            ><i class="fa fa-question" aria-hidden="true"></i
+          ></a>
+  
+          <a class="active" href="indexccidetails.html" title="Log Out"
+            ><i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+          </a>
+  
+        </nav>
+      </section>
+  
+    <div clas="flex-vertical">
         <header>
-            <div class="logo">CARE</div>
-            <div class="user-field">
-               
-                <a href="#">
-                    <i class="fa fa-user-circle" aria-hidden="true"></i> 
-                <i class="fa fa-caret-down" aria-hidden="true"></i>
+          <nav class="dashboard-nav navbar fixed-top navbar-light">
+            <div class="container">
+              <a class="" href="#"></a>
+    
+              <div id="dashboard-icons-container">
+    
+                <h6 class="dashoard-nav-icon"><%= employee.email.toUpperCase() %></h6>
+                <a href="" title="Profile">
+                  <i class="dashoard-nav-icon fa fa-user"></i>
                 </a>
-                
+                <a href="" title="Notifications"
+                  ><i class="dashoard-nav-icon fa fa-bell"></i>
+                </a>
+                <a href="" title="Messages"
+                  ><i class="dashoard-nav-icon fa fa-envelope"></i
+                ></a>
+                <a href="" title="Add Child"
+                  ><i class="dashoard-nav-icon fa fa-plus"></i
+                ></a>
+    
+              </div>
             </div>
-                
-                               
+          </nav>
+          <nav class="dashboard-nav-second navbar fixed-top navbar-light">
+            <div class="container">
+              <a class="dashboard-nav-brand navbar-brand" href="#"> CARE</a>
+            </div>
+          </nav>
         </header>
-        <section id="content-area">
-            <div class="form-container">
-            <div class="heading">
-                <h3>New Child Registration Portal</h3>
-            </div>
-            <div class="main">
-                <form class="form-group">
-                    <label class="name" for="">Name Of Child</label>
-                           
-                   <div class="row position">
-                   
-                       <div class="col-lg-6">
-                           
-                           <input type="text" name="child_firstname" id="name" class="full_name" placeholder="First Name">
-                       </div>
-                       <div class="col-lg-6">
-                           
-                           
-                          <input type="text" name="child_lastname" class="child-age" placeholder="Last Name">
-                       </div>
-                   </div>
-                   <label class="name" for="">AGE</label>
-                   <input type="text" name="child_age" id="name" class="cci-address" placeholder="Age in Years">
+    </div>
+    <!--Ending of code for dashboard and beginning of form-->
+    <section id="content-area">
+        <!--heading-->
+        <div class="heading">
+            <p class="name">New Child Registration Portal</p>
+          </div>
+        <!--image-->
+        <div class="image">
+            <img src="img/happykids.png" alt="">
+        </div> 
+        <!--form-->
+        <div class="container pos">
+           <form action="">
+                <div class="personalinfo">
+                    <p class="infoheading">Personal Information</p>
+                    <hr>
+                    <div class="form-group">
+                        <label for="" class="fields">Name Of Child</label>
                        
-                   <div>
-                  <label class="name" for="">Name Of CCI</label>
-                    <select name="cci_name" class="option1">
-                        <option disabled="disabled" selected="selected">-----------------Select----------------</option>
-                        <option>St. Judes Child Care</option>
-                        <option>Mother Teresa Child Care</option>
-                        <option>Snehalaya Child Care</option>
+                        <div class="row position">
                         
-                    </select>
+                            <div class="col-sm-4">
+                                
+                                <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                <input type="text" name="mname" id="mname" class="form-control" placeholder="Middle Name">
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                
+                               <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        
+                    </div> 
+                    <div class="form-group">
                     
-                   </div>
-                   
-                    <label for="" class="name">DATE WHEN THE CHILD WAS FOUND</label>
-                    <input type="date" class="date" name="found_date" placeholder="dd-mm-yyyy"> 
-                    <div class="row pos">
-                        <label for="" class="name">GENDER</label>
-                    </div>
-                    <div class="row pos">
+                       
+                        <div class="row position">
                         
-                        <label for="" class="radio name">
-                            <input type="radio" class="radio-one" name="gender">
-                            <span class="checkmark"></span>
-                            Male
-                        </label>
-                        <label for="" class="radio name">
-                            <input type="radio" class="radio-one" name="gender">
-                            <span class="checkmark"></span>
-                            Female
-                        </label>
-                        <label for="" class="radio name">
-                            <input type="radio" class="radio-one" name="gender">
-                            <span class="checkmark"></span>
-                            Others
-                        </label>
+                            <div class="col-sm-6">
+                                <label for="" class="fields">AGE OF CHILD</label>
+                                <input type="text" name="age" id="age" class="form-control" placeholder="Age of child">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="" class="fields">DATE OF BIRTH</label>
+                                <input type="date" name="dob" id="dob" class="form-control" placeholder="dd-mm-yyyy">
+                            </div>
+                           
+                        </div>
+
+                        
                     </div>
-                    <label for="" class="name">CWC WITNESS</label>
-                    <input type="text" class="cwc" name="cwc_witness" placeholder="CWC Official(ID)">
-                    <div class="row name pos">
-                        <input type="checkbox" name="confirm">
-                        <label for="" class="check">CONFIRM</label>
+                    <div class="form-group">
+                        <label for="" class="fields">AADHAAR NUMBER</label>
+                        <input type="text" name="adhaarnum" id="adhaarnum" class="form-control" placeholder="Aadhaar Number">
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">GENDER</label>
+                        <div class="row position">
+                        
+                            <div class="col-sm-4">
+                                
+                                <label for="" class="radio name">
+                                    <input type="radio" class="radio-one" name="gender">
+                                    <span class="checkmark"></span>
+                                    Male
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                <label for="" class="radio name">
+                                    <input type="radio" class="radio-one" name="gender">
+                                    <span class="checkmark"></span>
+                                    Female
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                
+                                <label for="" class="radio name">
+                                    <input type="radio" class="radio-one" name="gender">
+                                    <span class="checkmark"></span>
+                                    Others
+                                </label>
+                            </div>
+                        </div>
+                     </div>  
+                </div>
+                <div class="guardianinfo">
+                    <p class="infoheading">Guardian Information</p>
+                    <hr>
+                    <div class="form-group">
+                        <label for="" class="fields">GUARDIAN 1</label>
+                       
+                        <div class="row position">
+                        
+                            <div class="col-sm-4">
+                                
+                                <input type="text" name="g1fname" id="g1fname" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                <input type="text" name="g1mname" id="g1mname" class="form-control" placeholder="Middle Name">
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                
+                               <input type="text" name="g1lname" id="g1lname" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">AGE</label>
+                        <input type="text" name="ageg1" id="ageg1" class="form-control" placeholder="Enter Age">
+                    </div> 
+                    <hr>
+                    <div class="form-group">
+                        <label for="" class="fields">GUARDIAN 2</label>
+                       
+                        <div class="row position">
+                        
+                            <div class="col-sm-4">
+                                
+                                <input type="text" name="g2fname" id="g2fname" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                <input type="text" name="g2mname" id="g2mname" class="form-control" placeholder="Middle Name">
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                
+                               <input type="text" name="g2lname" id="g2lname" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">AGE</label>
+                        <input type="text" name="ageg2" id="ageg2" class="form-control" placeholder="Enter Age">
+                    </div> 
+
+                </div>
+                <div class="healthinfo">
+                    <p class="infoheading">Health Information</p>
+                    <hr>
+                    <div class="form-group">
+                       
+                       
+                        <div class="row position">
+                        
+                            <div class="col-sm-4">
+                                <label for="" class="fields">BLOOD GROUP</label>
+                                <input type="text" name="bloodgp" id="bloodgp" class="form-control" placeholder="Blood Group">
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="" class="fields">HIEGHT</label>
+                                <input type="text" name="hieght" id="hieght" class="form-control" placeholder="Hieght(in m)">
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                <label for="" class="fields">WEIGHT</label> 
+                               <input type="text" name="weight" id="weight" class="form-control" placeholder="Weight(in kgs)">
+                            </div>
+                        </div>
+                        
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">ANY CHRONIC ILLNESS</label>
+                        <input type="text" name="chronicill" id="chronicill" class="form-control" placeholder="If yes then Specify the Illness">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="fields">ALLERGIC TO ANY PARTICULAR MEDICINE</label>
+                        <input type="text" name="allergy" id="allergy" class="form-control" placeholder="If yes then Specify name of medicine">
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">ANY PHYSICAL INJURIES</label>
+                        <div class="row position">
+                        
+                            <div class="col-sm-3">
+                                
+                                <label for="" class="radio name">
+                                    <input type="radio" class="radio-one" name="injury">
+                                    <span class="checkmark"></span>
+                                    Cuts
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                
+                                <label for="" class="radio name">
+                                    <input type="radio" class="radio-one" name="injury">
+                                    <span class="checkmark"></span>
+                                    Burns
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                
+                                
+                                <label for="" class="radio name">
+                                    <input type="radio" class="radio-one" name="injury">
+                                    <span class="checkmark"></span>
+                                    Others
+                                </label>
+                            </div>
+                            <div class="col-sm-3">
+                                
+                                
+                                <label for="" class="radio name">
+                                    <input type="radio" class="radio-one" name="injury">
+                                    <span class="checkmark"></span>
+                                    None
+                                </label>
+                            </div>
+                        </div>
+                     </div> 
+                     <div class="form-group">
+                        <label for="" class="fields">PHYSICALLY CHALLENGED</label>
+                        <input type="text" name="physicalchallenge" id="physicalchallenge" class="form-control" placeholder="Yes / No">
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">MENTAL ILLNESS</label>
+                        <input type="text" name="mentalhealth" id="mentalhealth" class="form-control" placeholder="Yes / No">
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">ANY DISEASE FROM WHICH THE CHILD IS CURRENTLY SUFFERING</label>
+                        <input type="text" name="disease" id="disease" class="form-control" placeholder="If yes then Specify name of disease">
+                    </div> 
+                </div>
+                <div class="officialinfo">
+                    <p class="infoheading">Official Information</p>
+                    <hr>
+                    <div class="form-group">
+                    
+                       
+                        <div class="row position">
+                        
+                            <div class="col-sm-6">
+                                <label for="" class="fields">CHILD NUMBER</label>
+                                <input type="text" name="cnum" id="cnum" class="form-control" placeholder="Enter child Number">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="" class="fields">CHILD ID</label>
+                                <input type="text" name="cid" id="cid" class="form-control" placeholder="Enter child ID">
+                            </div>
+                           
+                        </div>
+
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="fields">ASSIGNED CCI NAME</label>
+                        <select name="cci_name" class="form-control">
+                            <option disabled="disabled" selected="selected">-----------------Select----------------</option>
+                            <option>St. Judes Child Care</option>
+                            <option>Mother Teresa Child Care</option>
+                            <option>Snehalaya Child Care</option>
+                            
+                        </select>
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">REGISTRATION DATE</label>
+                        <input type="date" name="regdate" id="regdate" class="form-control" placeholder="dd-mm-yyyy">
                     </div>
                    
-                  <button onclick="validation();" class="btn">REGISTER</button>
-
-
-
-
-                </form>
-            </div>
-        </div>
-        </section>
-       
-    
-    <script src="../js/sweetalert.min.js"></script>
-    <script type="text/javascript">
-        function validation(){
-            swal("Registered Successfully", "Child is registered", "success");
-            
-        }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
-   
-
-    
-
-
-
+                    <div class="form-group">
+                        <label for="" class="fields">WITNESS</label>
+                        <input type="text" name="witness" id="witness" class="form-control" placeholder="CWC Witness ID">
+                    </div> 
+                </div>
+                <div class="registration">
+                    <div class="form-group">
+                        <div class="row reg">
+                            <input type="checkbox" name="confirm">
+                            <label for="" class="infoheading">CONFIRM</label>
+                        </div>
+                    </div>
+                    <div class="btn"><a class="backbt" href="indexregister.html">REGISTER</a></div>
+                     
+                </div>
+               
+           </form>
+        </div> 
+    </section>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>
