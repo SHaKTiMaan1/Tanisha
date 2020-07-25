@@ -1,12 +1,35 @@
 #content-area{
-    margin-left: 250px;
-    padding-top: 60px;
-    background-image: linear-gradient(125deg,#2c3e50,#27ae50,#27ae60,#2980b9,#e74c3c,#8e44ad);
-    background-size: 400%;
-    animation: bganimation 20s infinite;
-    height: 100vh;
-
+    margin-top: 12vh !important;
+  margin-left: 50px !important;
+  
+  width: 96%;
+     
 }
+.district{
+    font-size: 20px;
+}
+.place{
+    float: right;
+}
+
+.starting{
+    margin: 10px;
+    padding: 15px;
+    background: #7e04b6;
+    border-radius: 6px;
+    color: #fff;
+}
+.pos{
+    margin: 10px;
+    padding: 15px;
+}
+
+.list{
+
+    margin: 10px;
+    padding: 10px;
+}
+
 .main{
     padding: 15px;
 }
@@ -18,9 +41,7 @@
     text-align: center;
     border-bottom: 5px solid #282639;
 }
-.pos{
-    float: left;
-}
+
 .name{
     color: #282639;
     font-size: 1.3rem;
@@ -48,7 +69,10 @@
 /*table code*/
 table{
     width: 100%;
-    margin-top: 30px;
+    background: #dfe4eb !important;
+    border-radius: 8px !important;
+    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.9);
+
 
 }
 table thead{
@@ -59,13 +83,14 @@ table thead{
    -moz-border-radius-topright: 5px;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
+   border-radius: 8px;
 }
 table thead th{
     font-size: 1rem;
     padding: 10px 10px;
     text-transform: uppercase;
     font-weight: 200px;
-    color: #D3D3D3;
+    color: #fff;
     text-align: left;
    
 }
@@ -73,7 +98,7 @@ table thead th{
     text-align: center !important;
 }
 tbody{
-   background: #fff;
+   background: #dfe4eb;
     font-size: 1rem;
 
 }
@@ -87,17 +112,6 @@ td{
 }
 .joining{
     color:#39ff14;
-}
-@keyframes bganimation{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
 }
 
 .btn{
@@ -122,12 +136,10 @@ td{
     color: #d3d3d3;
 }
 .btn a:hover{
-    color: #39ff14;
+    color: #fff;
+    text-decoration: none;
 }
-*{
-    list-style: none;
-}
-.main .wrapper{
+.wrapper{
     float: left;
     margin-bottom: 50px;
     padding: 0;
@@ -214,4 +226,14 @@ td{
     cursor: pointer;
     
 
+}
+.default_option{
+    color: #7e04b6;
+}
+li{
+    color: #7e04b6;
+    list-style: none;
+}
+li:hover{
+    color: #282639 !important;
 }
