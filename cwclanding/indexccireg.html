@@ -3,137 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registering A New CCI</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <link rel="stylesheet" href="css/child.css">
-    <link rel="stylesheet" href="css/_ccicontent-area.css">
-    <script src="js/sweet-alert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+    <title>CCI Registration Portal</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rowdies&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/_ccicontent-area.css">
 </head>
 <body>
-    
-    
-        <section id="sideMenu">
-        
-            <nav>
-                 <a class="active" href="home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-              
-                <a class="active" href="index.html"><i class=" fa fa-id-badge" aria-hidden="true"></i>Child Registration</a>
-                <a class="active current" href="indexccireg.html"><i class="current2 fa fa-building" aria-hidden="true"></i>CCI Registration</a>
-                <a class="active" href="indexemployeereg.html"><i class="fa fa-id-badge" aria-hidden="true"></i>Employee Registration</a>
-                <a class="active" href="indexpool.html"><i class="fa fa-list-alt" aria-hidden="true"></i>Eligibility Pool</a>
-                <a class="active" href="indexccidetails.html"><i class="fa fa-info" aria-hidden="true"></i>   CCI Details</a>
-            </nav>
-        </section>
+    <section id="sideMenu">
+        <nav id="sidemenu-flexbox">
+  
+          <a
+            class="active "
+            href="home.html"
+            title="Home"
+            ><i class="fa fa-home" aria-hidden="true"></i
+          ></a>
+          <a
+          class="active current"
+          href="indexregister.html"
+          title="Registration Portal"
+          ><i class="current2 fa fa-user-plus" aria-hidden="true"></i>
+        </a>
+  
+          <a
+            class="active"
+            href="child_info.html"
+            title="Children Under Care"
+            ><i class="fa fa-child" aria-hidden="true"></i>
+          </a>
+  
+          <a
+            class="active"
+            href="indexccidetails.html"
+            title="Child Care Institutions under supervision"
+            ><i class="fa fa-building" aria-hidden="true"></i
+          ></a>
+  
+          <a
+            class="active"
+            href="indexccireg.html"
+            title="Help"
+            ><i class="fa fa-question" aria-hidden="true"></i
+          ></a>
+  
+          <a class="active" href="indexccidetails.html" title="Log Out"
+            ><i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+          </a>
+  
+        </nav>
+      </section>
+  
+    <div clas="flex-vertical">
         <header>
-            <div class="logo">CARE</div>
-            <div class="user-field">
-               
-                <a href="#">
-                    <i class="fa fa-user-circle" aria-hidden="true"></i> 
-                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </a>
-                
-            </div>
-                
-                               
-        </header>
-        <section id="content-area">
-            <div class="form-container">
-            <div class="heading">
-                <h3>New CCI Registration Portal</h3>
-            </div>
-            <div class="main">
-                <form class="form-group">
-                    <label class="name" for="">CCI HEAD</label>
-                    <div class="row position">
-                   
-                        <div class="col-lg-6">
-                            
-                            <input type="text" name="head_firstname" id="name" class="full_name" placeholder="First Name">
-                        </div>
-                        <div class="col-lg-6">
-                            
-                            
-                           <input type="text" name="head_lastname" class="child-age" placeholder="Last Name">
-                        </div>
-                    </div>
-                   <label for="" class="name">CCI Name</label> 
-                   <input type="text" name="cci_name" class="cci" placeholder="Enter the Name of the CCI">       
-                   <label class="name" for="">CONTACT INFORMATION</label>
-                    <div class="row position">
-                   
-                        <div class="col-lg-6">
-                            
-                            <input type="text" name="mobile_num" id="name" class="full_name" placeholder="Contact Number">
-                        </div>
-                        <div class="col-lg-6">
-                            
-                            
-                           <input type="email" name="email_id" class="child-age" placeholder="Email ID">
-                        </div>
-                    </div>
-                   <label for="" class="name">Address Of CCI</label>
-                    <input type="text" class="cci-address" name="cci_add" placeholder="Street Number/Block/Area Name">
-                    <div class="row position">
-                        <div class="col-lg-6">
-                            <label class="name" for="">District</label>
-                            <select name="district" class="option1">
-                                <option disabled="disabled" selected="selected">--Choose Option--</option>
-                                <option>Jhansi</option>
-                                <option>Lucknow</option>
-                                <option>Kanpur Nagar</option>
-                                <option>Prayagraj</option>
-                                <option>Agra</option>
-                                <option>Varanasi</option>
-                                <option>Mathura</option>
-                                <option>Delhi</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="name" for="">STATE</label>
-                            <select name="state" class="option1">
-                            <option disabled="disabled" selected="selected">--Choose Option--</option>
-                            <option>Uttar Pradesh</option>
-                            <option>Madhya Pradesh</option>
-                            <option>Andhra Pradesh</option>
-                            <option>Tamil Nadu</option>
-                            <option>Haryana</option>
-                            <option>Kerela</option>
-                            <option>Karnataka</option>
-                            <option>Kolkata</option>
-                        </select>
-                        </div>
-                    </div>
-                     <div class="row name pos">
-                        <input type="checkbox" name="confirm">
-                        <label for="" class="check">CONFIRM</label>
-                    </div>
-                   
-                    <button onclick="validation();" class="btn">REGISTER</button>
-
-
-
-
-                </form>
-            </div>
-        </div>
-        </section>
-       
+          <nav class="dashboard-nav navbar fixed-top navbar-light">
+            <div class="container">
+              <a class="" href="#"></a>
     
-   
-        <script src="../js/sweetalert.min.js"></script>
-        <script type="text/javascript">
-            function validation(){
-                swal("Registered Successfully", "CCI is registered", "success");
+              <div id="dashboard-icons-container">
+    
+                <h6 class="dashoard-nav-icon"><%= employee.email.toUpperCase() %></h6>
+                <a href="" title="Profile">
+                  <i class="dashoard-nav-icon fa fa-user"></i>
+                </a>
+                <a href="" title="Notifications"
+                  ><i class="dashoard-nav-icon fa fa-bell"></i>
+                </a>
+                <a href="" title="Messages"
+                  ><i class="dashoard-nav-icon fa fa-envelope"></i
+                ></a>
+                <a href="" title="Add Child"
+                  ><i class="dashoard-nav-icon fa fa-plus"></i
+                ></a>
+    
+              </div>
+            </div>
+          </nav>
+          <nav class="dashboard-nav-second navbar fixed-top navbar-light">
+            <div class="container">
+              <a class="dashboard-nav-brand navbar-brand" href="#"> CARE</a>
+            </div>
+          </nav>
+        </header>
+    </div>
+    <!--Ending of code for dashboard and beginning of form-->
+    <section id="content-area">
+        <!--heading-->
+        <div class="heading">
+            <p class="name">New CCI Registration Portal</p>
+          </div>
+       
+        <!--form-->
+        <div class="container pos">
+           <form action="">
+                <div class="officialinfo">
+                    <div class="form-group">
+                        <label for="" class="fields">CCI NAME</label>
+                        <input type="text" name="cci_name" id="cci_name" class="form-control" placeholder="Enter CCI Name">
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">Name Of CCI Head</label>
+                       
+                        <div class="row position">
+                        
+                            <div class="col-sm-4">
+                                
+                                <input type="text" name="headfname" id="headfname" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                <input type="text" name="headmname" id="headmname" class="form-control" placeholder="Middle Name">
+                            </div>
+                            <div class="col-sm-4">
+                                
+                                
+                               <input type="text" name="headlname" id="headlname" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">CCI Head ID</label>
+                        <input type="text" name="head_id" id="head_id" class="form-control" placeholder="Enter CCI Head ID">
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">CCI ID</label>
+                        <input type="text" name="cci_id" id="cci_id" class="form-control" placeholder="Enter CCI ID">
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">CCI ADDRESS</label>
+                        <input type="text" name="addressl1" id="addressl1" class="form-control" placeholder="Address Line 1">
+                        
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="addressl2" id="addressl2" class="form-control" placeholder="Address Line 2">
+                        
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="addressl3" id="addressl3" class="form-control" placeholder="Address Line 3">
+                    </div>
+               
+               
+                    <div class="form-group">
+                        <label for="" class="fields">DISTRICT</label>
+                        <select name="district" class="form-control">
+                            <option disabled="disabled" selected="selected">-----------------Select----------------</option>
+                            <option>Jhansi</option>
+                            <option>Prayagraj</option>
+                            <option>Agra</option>
+                            
+                        </select>
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">STATE</label>
+                        <select name="state" class="form-control">
+                            <option disabled="disabled" selected="selected">-----------------Select----------------</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Andhra Pradesh</option>
+                            
+                        </select>
+                    </div> 
+                    <div class="form-group">
+                        <label for="" class="fields">REGISTRATION DATE</label>
+                        <input type="date" name="regdate" id="regdate" class="form-control" placeholder="dd-mm-yyyy">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="" class="fields">WITNESS</label>
+                        <input type="text" name="witness" id="witness" class="form-control" placeholder="CWC Witness ID">
+                    </div> 
+                </div>    
                 
-            }
-        </script> 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                <div class="registration">
+                    <div class="form-group">
+                        <div class="row reg">
+                            <input type="checkbox" name="confirm">
+                            <label for="" class="infoheading">CONFIRM</label>
+                        </div>
+                    </div>
+                    <div class="btn"><a class="backbt" href="indexregister.html">REGISTER</a></div>
+                     
+                </div>
+               
+           </form>
+        </div> 
+    </section>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>
